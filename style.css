@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 18px;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    width: 250px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.image-container>img {
+    height: auto;
+    width: 100%;
+    border-radius: 7px;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(178, 100%, 50%, .4);
+    opacity: 0;
+    transition: 300ms ease;
+}
+
+.overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.nft-title {
+    color: #fff;
+}
+
+.desc {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.price {
+    display: flex;
+    gap: 7px;
+    color: hsl(178, 100%, 50%);
+}
+
+.time {
+    display: flex;
+    gap: 7px;
+    color: hsl(215, 51%, 70%)
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid hsl(215, 51%, 70%);
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.creator>img {
+    height: 40px;
+}
+
+.creator>p {
+    color: hsl(215, 51%, 70%);
+}
+
+span {
+    color: #fff;
+}
+
+span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
